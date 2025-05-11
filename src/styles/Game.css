@@ -1,0 +1,136 @@
+.game-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Ensure full background */
+}
+
+.game-screen {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-screen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.centered-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.loading-screen {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.loading-text {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.play-button {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-color: yellow;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.game-container {
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slot-machine {
+    width: 80%;
+    max-width: 600px;
+}
+
+.number-display {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinning-animation {
+    width: 100%;
+    height: auto;
+    animation: spinEffect 0.5s linear infinite;
+}
+
+@keyframes spinEffect {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+.result-numbers {
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+    color: gold;
+    gap: 20px;
+}
+
+.slot-number {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+}
+
+.spin-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.spin-button:hover {
+    background-color: darkred;
+}
+
+.spin-button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
